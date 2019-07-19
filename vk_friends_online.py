@@ -1,8 +1,12 @@
+import os
 import vk
 import getpass
+from dotenv import load_dotenv
 
 
 def main():
+    load_dotenv()
+
     login = input('login:')
     password = getpass.getpass()
     api = connect_to_vk(login, password)
@@ -11,9 +15,8 @@ def main():
 
 
 def connect_to_vk(login, password):
-    APP_ID = 7063582
     session = vk.AuthSession(
-        app_id=APP_ID,
+        app_id=os.environ.get('API_ID'),
         user_login=login,
         user_password=password,
         scope='friends',
