@@ -12,6 +12,7 @@
 ```sh
 git clone https://github.com/Safintim/8_vk_friends_online.git
 cd 8_vk_friends_online
+pip3 install -r requirements.txt
 python vk_friends_online.py
 ```
 
