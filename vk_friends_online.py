@@ -16,7 +16,7 @@ def main():
 
 def connect_to_vk(login, password):
     session = vk.AuthSession(
-        app_id=os.environ.get('API_ID'),
+        app_id=os.environ['API_ID'],
         user_login=login,
         user_password=password,
         scope='friends',
