@@ -9,12 +9,21 @@
 *Python3*
 
 ## Как запустить
+
+Склонировать репозиторий и установить зависимости из requirements.txt:
+
 ```sh
 git clone https://github.com/Safintim/8_vk_friends_online.git
 cd 8_vk_friends_online
-pip3 install -r requirements.txt
+pip install -r requirements.txt
+```
+
+Запустить скрипт:
+
+```sh
 python vk_friends_online.py
 ```
+
 
 ## Пользовательские настройки
 
